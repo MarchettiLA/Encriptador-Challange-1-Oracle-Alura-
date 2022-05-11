@@ -325,7 +325,7 @@ if(parseInt(completeHtml()) >= 1024){
 copyButttonDesktop.onclick = copiarResultado
 copyButttonMobile.onclick = copiarResultado 
    
-
+// Onload Actions
 textarea.focus();
 main.onload = main.style.opacity = "100%"
 barras.onload = barras.style.transform = "rotate(0.5turn)"
@@ -335,7 +335,7 @@ header.onload = header.style.opacity = "1"
 
 
 
-
+// Segun el contenido es el alto del texarea resultante
 const autoResizeTA = () => {
     if (resultadoFinalMobile.clientHeight !== resultadoFinalMobile.scrollHeight){
         resultadoFinalMobile.style.height = resultadoFinalMobile.scrollHeight + "px"
@@ -343,6 +343,7 @@ const autoResizeTA = () => {
 }
 
 
+// Creacion de la barra de navegacion
 let pushbar = new Pushbar({
         blur: true,
         overlay: true
