@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura - Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pushbarjs/pushbar.min.css">
+    <link rel="stylesheet" href="style.css">       
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img id="logo" src="img/freak-logo.png"></a></h1>
+    
+        <div id="nav-menu" data-pushbar-id="right" data-pushbar-direction="right">
+            
+            <div id="borde-nav">
+            <img src ="img/close-icon.png" data-pushbar-close>
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre el proyecto</a></li>
+                <li><a href="contact.html">Contacto</a> </li>
+            </ul>
+        </nav>
+
+        </div>
+        
+        <img data-pushbar-target="right" id="barras" src="img/barras.png">
+
+    </header>
+    <h2 class="contact-title">Contacto</h2>
+    <article>      
+        <form action="mailto:lautaroamarchetti" enctype="text/plain" method="post" name="contact-form">
+        <label for="name-input">Nombre</label>
+        <input class="contact-input" type="text" name="Nombre" id="name-input" required>
+        <label for="email-input">Correo Electrónico</label>
+        <input type="email" id="email-input" required>
+        <label for="tel-input">Teléfono</label>
+        <input type="tel" name="Telefono" id="tel-input" required>
+        <label for="asunto-input">Asunto</label>
+        <input type="text"  id="subject-input" required>
+        <label for="message-input">Mensaje</label>
+        <textarea name="Mensaje" id="message-input" required></textarea>
+        <input type="submit" id="envio-form">
+        </form>
+    </article>
+
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/lautaro-alejandro-marchetti-0a4ab9233"><img class= "logo-red" src="img/linkedin.png">Lautaro Marchetti</a> 
+        <a href="http://instagram.com/lmarchettiph"><img class= "logo-red" src="img/instagram.png">LMarchettiPH</a>
+    </div>
+
+    <footer>
+        <img src="img/freak-logo.png" alt="Freak Logo">
+        <h5>Freak Encrypter &#169 - 2022</h2>
+    </footer>
+   
+</body>
+</html>
+<script>
+    const header = document.querySelector("header")
+    const logo = document.getElementById("logo")
+    const barras= document.getElementById("barras")
+
+    barras.onload = barras.style.transform = "rotate(0.5turn)"
+    logo.onload = logo.style.transform = "scale(1)"
+    header.onload = header.style.opacity = "1"
+    const message = document.getElementById("message-input")
+    const form = document.querySelector("form")
+    const asunto = document.getElementById("subject-input");
+    const submit = document.getElementById("envio-form");
+    submit.onclick = () => form.action = `mailto:lautaroamarchetti@gmail.com?subject=${asunto.value}`;
+    const resizeMessage = () => {
+        if(form.clientHeight > 600){
+        message.style.height = `${form.clientHeight * 0.40}px`
+    } else {
+        message.style.height = `25%`
+    }
+ }
+
+ setInterval(resizeMessage,0)
+    
+</script>
+<script src="pushbarjs/pushbar.min.js"></script>
+<script>
+    let pushbar = new Pushbar({
+        blur: true,
+        overlay: true
+    });
+
+</script>
