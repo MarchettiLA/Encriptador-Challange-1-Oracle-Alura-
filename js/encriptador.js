@@ -30,7 +30,7 @@ let minusString = pasarMinus(string)
 for (let i=0; i<keyWords.length;i++){
    minusString = minusString.replaceAll(keyWords[i],vocales[i])
 }
-return string
+return minusString
 }
 
 
