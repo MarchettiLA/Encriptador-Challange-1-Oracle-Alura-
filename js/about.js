@@ -8,4 +8,3 @@ logoAbout.onload = logoAbout.style.transform = "scale(1)"
 headerAbout.onload = headerAbout.style.opacity = "1"
 
 
-
