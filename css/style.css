@@ -14,7 +14,7 @@ body{
     overflow-x: hidden;
     width: 100vw;
     min-height: 100%;
-    
+    position: absolute;
     
 }
 
@@ -301,6 +301,7 @@ aside{
 }
 
 footer{
+    position: static;
     margin: 10px 0;
     padding: 5px;
     height: 50px;

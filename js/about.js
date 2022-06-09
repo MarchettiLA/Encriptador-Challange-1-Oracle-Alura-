@@ -25,3 +25,4 @@ header.onload = header.style.opacity = "1"
 >>>>>>> parent of 6d0070e (reparando error constatante header about)
 
 
+
