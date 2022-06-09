@@ -9,8 +9,3 @@ headerAbout.onload = headerAbout.style.opacity = "1"
 
 
 
-const autoResizeTA = () => {
-    if (resultadoFinalMobile.clientHeight !== resultadoFinalMobile.scrollHeight){
-        resultadoFinalMobile.style.height = resultadoFinalMobile.scrollHeight + "px"
-    }
-}
