@@ -1,12 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 const headerAbout = document.querySelector("header")
-const logoAbout = document.getElementById("logo")
-const barrasAbout= document.getElementById("barras")
+const logo = document.getElementById("logo")
+const barras= document.getElementById("barras")
 
 
-barrasAbout.onload = barrasAbout.style.transform = "rotate(0.5turn)"
-logoAbout.onload = logoAbout.style.transform = "scale(1)"
+barras.onload = barras.style.transform = "rotate(0.5turn)"
+logo.onload = logo.style.transform = "scale(1)"
 headerAbout.onload = headerAbout.style.opacity = "1"
 =======
 =======
