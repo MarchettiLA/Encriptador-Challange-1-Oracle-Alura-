@@ -7,7 +7,7 @@ const message = document.getElementById("message-input")
 const form = document.querySelector("form")
 const asunto = document.getElementById("subject-input");
 const submit = document.getElementById("envio-form");
-submit.onclick = () => form.action = `mailto:lautaroamarchetti@gmail.com?subject=${asunto.value}`;
+
 const resizeMessage = () => {
     if(form.clientHeight > 600){
     message.style.height = `${form.clientHeight * 0.40}px`

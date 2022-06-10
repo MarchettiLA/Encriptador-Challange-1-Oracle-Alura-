@@ -44,7 +44,8 @@
     </header>
     <h2 class="contact-title">Contacto</h2>
     <article>      
-        <form action="mailto:lautaroamarchetti" enctype="text/plain" method="post" name="contact-form">
+      
+        <form action="https://formsubmit.co/lautaroamarchetti@gmail.com" enctype="text/plain" method="post" name="contact-form">
         <label for="name-input">Nombre</label>
         <input class="contact-input" type="text" name="Nombre" id="name-input" required>
         <label for="email-input">Correo Electrónico</label>
@@ -56,6 +57,8 @@
         <label for="message-input">Mensaje</label>
         <textarea name="Mensaje" id="message-input" required></textarea>
         <input type="submit" id="envio-form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://marchettila.github.io/Encriptador-Challange-1-Oracle-Alura-/">
         </form>
     </article>
 
