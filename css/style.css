@@ -1,0 +1,796 @@
+/*
+DISEÑO MOBILE-FIRST
+*/
+html{
+    width: 100vw;
+    height: 100%;
+ 
+}
+
+body{
+    background-color:  #D7D7D7;
+    height: 100vh;   
+    overflow-x: hidden;
+    width: 100vw;
+    
+}
+
+header{
+    display: block;
+    background: linear-gradient(0deg, rgba(81, 76, 76, 0.3), rgba(81, 76, 76, 0.3)), rgba(0, 0, 0, 0.7);
+    height: 75px;
+    padding: 20 0 20 20;
+    box-shadow: 0px 7px 20px 5px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 100vw;
+}
+
+#nav-menu1{
+    background-color: #DADADA;
+    box-shadow: 0px 7px 20px 5px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    overflow-x: hidden;
+    
+}
+
+#borde-nav{
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(81, 76, 76, 0.3), rgba(81, 76, 76, 0.3)), rgba(0, 0, 0, 0.7);
+}
+
+#borde-nav img{
+width: 22px;
+margin: 27px;
+margin-left: 18px ;
+}
+
+#borde-nav img:hover{
+    transform:scale(1.1);
+    cursor:pointer
+}
+
+#nav-menu ul {
+    align-items: flex-end ;
+}
+
+#nav-menu li{
+    cursor: pointer;
+    font-family:'Montserrat', sans-serif;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    height: 75px;
+    padding-right: 20px;
+    box-sizing: border-box; 
+    transition: all 0.5s; 
+}
+
+#nav-menu a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+#nav-menu li:hover{
+    background-color: rgba(231, 130, 15, 0.753);
+    font-size: 18px;
+}
+
+header h1{
+    position: absolute;
+    top: 20px;
+    left: 20px
+}
+
+#logo{
+    width: 135px;
+    transition: transform 1s;
+    transform: scale(0.9);
+}
+
+#barras{
+    width: 25px;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    transform: rotate(0);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 70% 5% 12.5% 12.5% 5%;
+    grid-template-columns: 100%;
+    grid-template-areas: "textarea"
+                         "minus"
+                         "boton1"
+                          "boton2" 
+                          "none"
+                         ;
+                          
+                          justify-items: center;
+    margin: 25px auto 10px auto;
+    width: 80%;
+    max-width: 380px;
+    height: 85%;
+    background: #DADADA;
+    box-shadow: 0px 12px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#textarea-principal{
+    position: relative;
+    top: 3px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100%;    
+    background-color: #DADADA;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Montserrat', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    grid-area: textarea;
+}
+
+#textarea-principal:focus{
+    outline: none;    
+}
+
+#exclam{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 14px;
+}
+
+#advMinus{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-block;
+}
+
+#advMinus-completa{
+    justify-self:flex-start;
+    grid-area: minus;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#encButton{
+    margin: 0;
+    background: #ED870F;
+    border-radius: 27px;
+    width: 88%;
+    min-width: 88%;
+    height: 85%;
+    border: none;
+    grid-area: boton1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#encButton:active{
+    box-shadow: inset 1px 1px 3px #3f3f3f;
+    background: #e7830f;
+}
+
+#dencButton{
+    margin: 0;
+    background: #DADADA;
+    border: 4px solid #ED870F;
+    box-sizing: border-box;
+    border-radius: 27px;
+    width: 88%;
+    min-width: 88%;
+    height: 85%;
+    grid-area: boton2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#dencButton:active{
+    box-shadow: inset 1px 1px 3px #3f3f3f;
+    background: #DADADB;
+}
+
+.noResult{
+    display: none;
+    padding: 15px 10px 10px 10px;
+    font-family: 'Bungee Shade', cursive;
+    margin:65px auto 0 auto;
+    background-color: #DADADA;
+    width: 80%;
+    height: 160px;
+    box-shadow: 0px 12px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.noResult h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ED870F;
+    text-shadow: 1px 1px 3px #8f8f8f
+}
+
+.noResult h3{
+    font-size: 18px;
+    text-align: center;
+    color: #000000; 
+}
+
+.noResult p{
+    font-family: 'Montserrat', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px auto  auto;
+    width: 75%;
+    font-size: 14px;
+}
+
+.result-mobile{
+    display: none;
+    margin: 35px auto 25px auto;
+    padding: 20px;
+    font-family: 'Bungee Shade', cursive;
+    background-color: #DADADA;
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 12px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.result-mobile textarea{
+    display: block;
+    height: 20px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #DADADA;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+}
+
+.result-mobile textarea:focus{
+    outline: none;
+}
+
+#copyMobile{
+    display: block;
+    margin: 16px auto 0 auto;
+    background: #DADADA;
+    border: 4px solid #dd7d0f;
+    box-sizing: border-box;
+    border-radius: 27px;
+    width: 85%;
+    height: 63px;
+}
+
+
+aside{
+    display: none;
+}
+
+footer{
+    position: relative;
+    margin: 10px 0;
+    padding: 5px;
+    height: 9vh;
+    background: linear-gradient(0deg, rgba(81, 76, 76, 0.3), rgba(81, 76, 76, 0.3)), rgba(0, 0, 0, 0.7);
+    
+}
+
+
+footer img {
+    display: block;
+    width: 115px;    
+    margin:5px auto
+}
+
+footer h5{
+    text-align: center;
+    color: #DADADA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px;
+}
+
+/* CONTACTO MOBILE */
+
+.contact-title{
+    font-size: 24px;
+    font-family: 'Koulen', cursive;
+    font-weight: bold;
+    margin: 20px 0 15px 10%;
+}
+
+
+article{
+    display: flex;
+    height: 100%;
+    width: 85%;
+    max-width: 825px;
+    margin: 10px auto; 
+
+}
+
+
+article form{
+    width: 100%;
+    height: 65%;
+    margin: 10px;   
+}
+
+article label{
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 2.5px 0 2.5px 10%;
+}
+
+article input{
+    width: 70%;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    display: block;  
+    border: none;
+}
+
+article textarea{
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 70%;
+    border-radius: 12px;
+    height: 27%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    resize: none;
+}
+
+#envio-form{
+    display: block;
+    margin: 15px auto;
+    width: 75%;
+    height: 4em;
+    background-color: #f58504;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    border: none;
+}
+
+#envio-form:hover{
+    background-color: #e27900;
+}
+
+.redes{
+    position: relative;
+    display: grid; 
+    margin: 0 0 10px 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:  1fr 1fr;
+    grid-template-areas: "a b";
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+    
+}
+
+
+.redes img{
+    width: 25px;
+    position: relative;
+    top: 5px;
+    right: 6px;
+    
+}
+
+
+
+.redes a{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+.redes a:first-child{
+    grid-area: a;
+}
+
+.redes a:nth-child(2){
+    grid-area: b;
+}
+
+/* ABOUT MOBILE */
+
+.about{
+    height: 100%;
+}
+
+.about-title{
+    font-size: 24px;
+    font-family: 'Koulen', cursive;
+    font-weight: bold;
+    margin: 20px 0 15px 10%;
+    
+    
+}
+
+.about p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    line-height: 20px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+
+
+/*
+FORMATO TABLET A CONTINUACION
+*/
+@media (max-width: 1024px) and (min-width:768px){ 
+
+    html,body{
+        max-height: 1055px;
+        height: 1055px;
+    }
+
+    main{
+        width: 90%;
+        max-width: 800px;
+        margin-top: 2%;
+        height: 85%;
+        display: grid;
+    grid-template-rows: 76% 5% 5%;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas: "textarea textarea"
+                        "textarea textarea"
+                         "minus none"
+                         "boton1 boton2";
+    justify-items: center;
+    }
+
+    #textarea-principal{
+        
+        min-height: 77%;
+        max-height: 0;
+        resize: none;
+    }
+    
+   #encButton{   
+    display: inline-block;
+       width:45%;    
+       height: 63px;
+       border: #000000 solid 1px;
+   }
+
+   #dencButton{
+        display: inline-block;
+       width: 45%; 
+        height: 63px;
+       margin-left: 0px ;
+   }
+    
+   .noResult {
+       padding-top: 35px;
+       width: 90%;
+        max-width: 800px;
+   }
+   
+   #result-mobile{
+    width: 90%;
+    max-width: 800px;
+   }
+
+
+ 
+}
+
+
+
+/*
+FORMATO DESKTOP
+*/
+@media (min-width:1024px){
+    
+html,body{
+    overflow: hidden;
+}
+
+header{
+    height: 70px;
+}
+
+header h1 {
+    position: relative;
+    left: 2%;
+    bottom: 1%;
+}
+
+#barras {
+    position: relative;
+    top: -12px;
+    left: 96%;
+}
+
+
+main{
+    display: grid;
+    grid-template-rows: 82% 5% 5% ;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "textarea textarea"
+                         "minus none"
+                         "boton1 boton2"
+                         
+                         ;       
+                         grid-row-gap: px;                  
+    margin: 24px 0 0 56px;
+    width: 92vw;
+    max-width: 2560px;
+    height: 80vh;
+    min-height: 300px;
+    max-height: 1500px;
+}
+
+#advMinus-completa{
+    grid-area: minus;
+    display: auto;
+}
+
+#textarea-principal{
+      width: 90%;
+      height: 98%;
+      resize: none;    
+      grid-area: textarea
+}
+
+  #encButton{ 
+    grid-area: boton1;      
+    width:90%;
+    height: 63px;
+    display: inline-block;
+}
+
+#dencButton{
+    grid-area: boton2;
+    width: 90%; 
+    height: 63px;  
+    display: inline-block;
+}
+   aside{
+    display: block;
+    width: 0%;
+    background-color: #DADADA;
+    border-radius: 24px;       
+     padding: 15px 10px 10px 10px;
+     font-family: 'Bungee Shade', cursive;
+     margin:65px 35px  auto;
+     height: 80vh;
+     box-shadow: 0px 12px 20px 5px rgba(0, 0, 0, 0.25);
+     border-radius: 50px;
+     box-sizing: border-box;
+     float:right;
+     position: absolute;
+     right: 0.5%;
+     top: 30px;
+     visibility: hidden;
+    }  
+    
+   .noResult-desktop{
+    display: none;
+   }
+
+   .noResult-item{
+      opacity: 0;
+   }
+
+   .noResult-desktop h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 52%;
+    color: #ED870F;
+    text-shadow: 1px 1px 3px #8f8f8f
+}
+
+.noResult-desktop h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000000; 
+}
+
+.noResult-desktop p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 20px auto  auto 0;
+    width: 75%;
+    font-size: 18px;
+    margin: auto;
+    z-index: 150;
+}
+   
+#result-desktop{
+     display: none;
+     margin: 0 auto; 
+     height: 90%;
+}
+
+#result-desktop textarea{
+    display: block;
+    background-color: #DADADA;
+    height: 345px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 10px;
+    font-family: 'Montserrat', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    resize: none;
+    border:none
+    }
+
+#result-desktop textarea:focus{
+    outline: none;
+}
+    
+
+#copyDesktop{
+    display: block;
+    margin: 16px auto 0 auto;
+    background: #DADADA;
+    border: 4px solid #dd7d0f;
+    box-sizing: border-box;
+    border-radius: 27px;
+    width: 85%;
+    height: 63px;
+   }  
+
+   /* CONTACTO DESKTOP */
+
+.contact-title{
+    font-size: 36px;
+    font-family: 'Koulen', cursive;
+    margin: 20px 0 25px 10%;
+}
+
+
+article{
+    display: flex;
+    height: 74%;
+    width: 85%;
+    max-width: 825px;
+    margin: 10px auto; 
+}
+
+
+article form{
+    width: 100%;
+    margin: 10px;   
+    height: 70%;
+}
+
+article label{
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 2.5px 0 2.5px 10%;
+}
+
+article input{
+    width: 70%;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    display: block;  
+    border: none;
+}
+
+article textarea{
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 70%;
+    border-radius: 12px;
+    height: 30%;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    resize: none;
+}
+
+#envio-form{
+    display: block;
+    margin: 15px auto;
+    width: 75%;
+    height: 4em;
+    background-color: #f58504;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    border: none;
+}
+
+#envio-form:hover{
+    background-color: #e27900;
+}
+
+.redes{
+ 
+    margin: -20px 0 0 0;
+    width: 100%;
+}
+
+.redes a{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+.redes a:first-child{
+    grid-area: a;
+}
+
+.redes a:nth-child(2){
+    grid-area: b;
+}
+
+.redes img{
+    width: 25px;
+    position: relative;
+    top: 5px;
+    right: 8px;
+}
+   
+/* ABOUT DESKTOP */
+
+
+
+.about{
+    height: 82%;
+}
+
+.about-title{
+    font-size: 36px;
+}
+
+}
+

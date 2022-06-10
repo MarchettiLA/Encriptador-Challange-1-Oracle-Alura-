@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura - Contacto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pushbarjs/pushbar.min.css">
+    <link rel="stylesheet" href="./css/style.css">      
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img id="logo" src="img/freak-logo.png"></a></h1>
+    
+        <div id="nav-menu" data-pushbar-id="right" data-pushbar-direction="right">
+            
+            <div id="borde-nav">
+            <img src ="img/close-icon.png" data-pushbar-close>
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre el proyecto</a></li>
+                <li><a href="contact.html">Contacto</a> </li>
+            </ul>
+        </nav>
+
+        </div>
+        <img data-pushbar-target="right" id="barras" src="img/barras.png">
+    </header>
+    <main>                
+            <textarea id="textarea-principal"  placeholder="Ingrese su texto aqui"></textarea>
+        
+        <div id="advMinus-completa">
+            <img src="img/exclamation.png" id="exclam">
+            <p id="advMinus">Solo letras minúsculas y sin acentos</p>
+        </div>
+        
+            <button id="encButton">Encriptar</button>
+            <button id="dencButton">Desencriptar</button>
+            
+    </main>
+        <section class="noResult" id="noResult">
+            <h2>¡UPS!</h2>
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </section>
+
+        <section class="result-mobile" id="result-mobile">
+            <div>
+                <textarea  id="result-area-mobile"></textarea>
+            </div>
+             <button class="copy-button" id="copyMobile">Copiar</button>
+            
+        </section>
+
+        <br id="lastJump"> 
+        <a name="abajo"></a>
+    <aside id="desktop-aside">
+       
+        
+        <div id="result-desktop">
+            <textarea readonly id="result-area"></textarea>
+            <button class="copy-button" id="copyDesktop">Copiar</button>
+        </div>
+
+        <div class="noResult-desktop" id="noResult-desktop">
+            
+        <h2 class="noResult-item">¡UPS!</h2>
+        <h3 class="noResult-item">No hay resultados</h3>
+        <p class="noResult-item">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+
+    </aside>
+    <footer>
+        <img src="img/freak-logo.png" alt="Freak Logo">
+        <h5>Freak Encrypter &#169 - 2022</h2>
+    </footer>
+</body>
+</html>
+
+<script src="js/elements.js"></script>
+<script src="js/encriptador.js"></script>
+<script src="js/show-results.js"></script>
+<script src="js/buttons.js"></script>
+<script src="pushbarjs/pushbar.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pushbar-init.js"></script>
+<script src="js/about.js"></script>
+
+
+
+
+
+
+
