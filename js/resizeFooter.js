@@ -12,7 +12,7 @@ function resizeFooterContact() {
     }
 }
 
-setInterval(resizeFooterContact,100);
+
 
 function resizeFooterIndex() {
 
@@ -25,4 +25,3 @@ function resizeFooterIndex() {
     }
 }
 
-setInterval(resizeFooterContact,100);
