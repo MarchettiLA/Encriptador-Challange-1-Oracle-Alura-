@@ -293,6 +293,7 @@ aside{
 }
 
 footer{
+    position: relative;
     margin: 10px 0;
     padding: 5px;
     height: 9vh;
@@ -388,6 +389,7 @@ article textarea{
 }
 
 .redes{
+    position: relative;
     display: grid; 
     margin: 0 0 10px 0;
     display: grid;
